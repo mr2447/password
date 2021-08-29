@@ -15,16 +15,16 @@ var generatePassword = function() {
       generatePassword();
     }
   var specialConfirm = confirm("Click OK to confirm including special characters.")
-  //debugger;
+  
 
   var numericConfirm = confirm("Click OK to confirm including numeric characters.")
-  //debugger
+  
   var lowerCaseConfirm = confirm("Click OK to confirm including lowercase characters.")
-  //debugger
+  
   var upperCaseConfirm = confirm("Click OK to confirm including uppercase characters.")
-  //debugger
-    generate(specialConfirm, numericConfirm, lowerCaseConfirm, upperCaseConfirm);
-   // debugger
+  
+  generate(specialConfirm, numericConfirm, lowerCaseConfirm, upperCaseConfirm);
+  
     var password = "";
       for (var i = 0; i < characterAmount; i++) {
       var value= allChars[Math.floor(Math.random()*allChars.length)];
