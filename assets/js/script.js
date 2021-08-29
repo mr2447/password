@@ -20,26 +20,28 @@ var generatePassword = function() {
   var upperCaseConfirm = confirm("Click OK to confirm including uppercase characters.")
     generate(specialConfirm, numericConfirm, lowerCaseConfirm, upperCaseConfirm);
 
-    for (var i = 0; i < characterAmount; i++) {
+    var password = "";
+      for (var i = 0; i < characterAmount; i++) {
       var value= allChars[Math.floor(Math.random()*allChars.length)];
-    }
-
+      password += value
+      }
+    return password;
 }
 
 
-// function to generate password
+// function to generate p
 var generate = function (specialConfirm, numericConfirm, lowerCaseConfirm, upperCaseConfirm) {
   if (specialConfirm) { 
-   allChars.push(specialCharacter)
+   allChars = allChars.concat(specialCharacter)
   };
   if (numericConfirm) {
-   allChars.push(numericCharacter);
+   allChars = allChars.concat(numericCharacter);
   };
   if (lowerCaseConfirm) {
-   allChars.push(lowerCaseCharacter);
+   allChars = allChars.concat(lowerCaseCharacter);
   };
   if (upperCaseConfirm) { 
-   allChars.push(upperCaseCharacter);
+   allChars = allChars.concat(upperCaseCharacter);
   };
 };
 
