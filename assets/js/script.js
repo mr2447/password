@@ -15,9 +15,13 @@ var generatePassword = function() {
       generatePassword();
     }
   var specialConfirm = confirm("Click OK to confirm including special characters.")
+  console.log(specialConfirm)
   var numericConfirm = confirm("Click OK to confirm including numeric characters.")
+  console.log(numericConfirm)
   var lowerCaseConfirm = confirm("Click OK to confirm including lowercase characters.")
+  console.log(lowerCaseConfirm)
   var upperCaseConfirm = confirm("Click OK to confirm including uppercase characters.")
+  console.log(upperCaseConfirm)
     generate(specialConfirm, numericConfirm, lowerCaseConfirm, upperCaseConfirm);
 
     var password = "";
