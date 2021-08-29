@@ -22,4 +22,4 @@ For future emploer to reviews samles of my work and assess whether they're a goo
 Made with ❤ by Marvin Ren
 ```
 ## Screen Shot
-![passWordGen page](./assets/image/passwordGen-screen-shot)
+![passWordGen page](./assets/image/passwordGen-screen-shot.jpeg)
